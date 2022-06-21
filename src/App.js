@@ -11,14 +11,11 @@ const App = () => {
     <div className="App">
       <div className="container">
         <Header />
-        
-        <main className="main">
         {
           contacts.map((contact) => {
             return <Contact data={contact}/>
           })
         }
-        </main>
       </div>
     </div>
   );
